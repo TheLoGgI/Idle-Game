@@ -1,0 +1,202 @@
+﻿
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: lightgray;
+}
+
+.main {
+	height: 110vh;
+	background: gray;
+}
+
+/* The Enemy */
+header{
+	margin: 0px auto;
+	position: absolute;
+	top: 5%;
+	left: 36%;
+	font-size: 3.5rem;
+
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+p {
+	 font-size: 1.4rem;
+ }
+
+.box {
+width: 10%;
+height: 16%;
+float: left;
+display: block;
+margin: 20% 0px 50px 10vw;
+
+
+}
+.box p, .shopitem p {
+	font-size: 1.6rem;
+	text-align: center;
+	user-select: none;
+}
+
+.bigone, .enemy{
+width: 20%;
+height: 30%;
+background-color: darkslategray;
+position: relative;
+left: 40vw;
+top: 20vh;
+}
+
+ .bigone:active {
+	background-color: Tomato;
+}
+.enemy:active {
+ background-color: Orange;
+}
+
+.redbox {
+background-color: red;
+}
+ .item1:active {
+	background-color: #d1261d;
+}
+.bluebox {
+background-color: blue;
+}
+.item2:active {
+	background-color: #1345b2;
+}
+.orangebox {
+background-color: orangered;
+}
+.item3:active {
+	background-color: #c46c07;
+}
+.purplebox {
+background-color: purple;
+}
+.item4:active {
+	background-color: #6c0ca0;
+}
+
+/* Shop */
+h2 {
+	font-size: 3.5rem;
+	color: black;
+	position: absolute;
+	right: 100px;
+	top: 25vh;
+}
+
+  h2:hover {
+	color: orangered;
+	text-shadow: 5px 5px 20px #FF0000, -20px -5px 5px #0000FF; /* x y spred */
+}
+
+.shop{
+	height: 100vh;
+}
+.shopitem{
+	width: 15%;
+	height: 25%;
+	float: left;
+	margin: 25vh 0px 0px 8%;
+	position: relative;
+	top: 15vh;
+}
+
+.item1 {
+background-color: red;
+}
+.item2 {
+background-color: blue;
+}
+.item3 {
+background-color: orangered;
+}
+.item4 {
+background-color: purple;
+}
+
+
+.redbox + p,.bluebox + p,.orangebox + p,.purplebox + p, .item1 + p,.item2 + p,.item3 + p,.item4 + p{
+	position: absolute;
+}
+.redbox + p {
+top: 89vh;
+left: 12vw;
+}
+.bluebox + p {
+top: 89vh;
+left: 33%;
+}
+.orangebox + p {
+top: 89vh;
+right: 32vw;
+}
+.purplebox + p {
+top: 89vh;
+right: 10vw;
+}
+
+/* SHOP Items style */
+.item1 + p {
+top: 175vh;
+left: 9vw;
+}
+.item2 + p {
+top: 175vh;
+left: 33vw;
+}
+.item3+ p {
+top: 175vh;
+right: 29vw;
+}
+.item4 + p {
+top: 175vh;
+right: 7vw;
+}
+.shop h1 {
+	position: absolute;
+	top: 130vh;
+	left: 15%;
+	font-size: 3.5rem;
+}
+.shop p+ h3 {
+	position: absolute;
+	top: 190vh;
+	left: 3%;
+	font-size: 1.6rem;
+	color: black;
+	}
+
+.score, .damagePoints {
+	font-size: 1.6rem;
+	color: black;
+	position: absolute;
+}
+
+.main .score {
+	top: 100px;
+	left: 150px;
+}
+
+.shop .score {
+	top: 188vh;
+	left: 550px;
+	}
+
+	.damagePoints {
+		top: 25vh;
+		left: 146px;
+	}
